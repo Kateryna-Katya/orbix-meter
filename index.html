@@ -1,56 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/orbix-meter/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbix-Meter | ИИ для реальных задач</title>
+  <meta name="description" content="Инновационные ИИ-решения для повседневной жизни. Технологии нового поколения.">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
     <script type="module" crossorigin src="/orbix-meter/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/orbix-meter/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/orbix-meter/assets/styles-FHIh4aOo.css">
   </head>
   <body>
+    <div class="scroll-wrapper">
     <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a href="./#home" class="logo">
+      Orbix<span class="logo__dot">-</span>Meter
+    </a>
+
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+      <ul class="nav__list">
+        <li><a href="./#home" class="nav__link">Главная</a></li>
+        <li><a href="./#about" class="nav__link">О платформе</a></li>
+        <li><a href="./#benefits" class="nav__link">Преимущества</a></li>
+        <li><a href="./#innovations" class="nav__link">Технологии</a></li>
+        <li><a href="./#blog" class="nav__link">Блог</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--outline">Связаться</a>
+      <button class="burger" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
+<div class="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li><a href="./#home" class="mobile-menu__link">Главная</a></li>
+    <li><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+    <li><a href="./#benefits" class="mobile-menu__link">Преимущества</a></li>
+    <li><a href="./#innovations" class="mobile-menu__link">Инновации</a></li>
+    <li><a href="./#blog" class="mobile-menu__link">Практики</a></li>
+    <li><a href="./#contact" class="mobile-menu__link btn btn--accent">Связаться</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="home">
+    <div class="container hero__container">
+        <h1 class="hero__title" id="hero-title">
+            AI инструменты <br> <span>для реальных задач</span>
+        </h1>
+        <p class="hero__subtitle">
+            Воплотите мечты в реальность. Платформа года для тех, кто ценит время и результат. Быстрый старт за 2
+            минуты.
+        </p>
+        <div class="hero__btns">
+            <a href="#contact" class="btn btn--accent">Начать сейчас</a>
+            <a href="#about" class="btn btn--text">Узнать детали <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="hero__badge">
+            Предложение активно только в странах ЕС
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="anti-grid">
+            <div class="anti-grid__item about__content">
+                <h2 class="section-title">Легко разобраться <span>без опыта</span></h2>
+                <p>Orbix-Meter — это инновационная технология, которая делает сложные алгоритмы доступными каждому. Мы
+                    создали среду, где AI-инструменты работают на вас, а не наоборот.</p>
+            </div>
+            <div class="anti-grid__item about__image">
+                <img src="/orbix-meter/assets/one-TZhnOFlw.jpg" alt="AI Tech">
+                <div class="image-label">Innovation 2025</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits" id="benefits">
+    <div class="container">
+        <h2 class="section-title">Почему Orbix-Meter?</h2>
+        <div class="benefits__grid">
+            <div class="benefit-card">
+                <div class="benefit-card__num">01</div>
+                <h3>Быстрый и лёгкий старт</h3>
+                <p>Интеграция занимает минимум времени. Подключение и настройка понятны на интуитивном уровне.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__num">02</div>
+                <h3>Пассивный доход</h3>
+                <p>Технология разработана для создания устойчивых стратегий роста и программ пассивного дохода.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card__num">03</div>
+                <h3>Экспертная поддержка</h3>
+                <p>Методологии, доказавшие эффективность. Сопровождение на всех этапах развития вашего проекта.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="innovations" id="innovations">
+    <div class="container">
+        <div class="innovations__header">
+            <h2 class="section-title">Передовая цифровая <br>инфраструктура</h2>
+            <div class="tag">Next Gen Tech</div>
+        </div>
+        <div class="innovations__box">
+            <div class="innovations__item">
+                <h4>Решения, меняющие правила</h4>
+                <p>Мы используем нейросети последнего поколения для автоматизации рутины.</p>
+            </div>
+            <div class="innovations__item">
+                <h4>Адаптация без сложностей</h4>
+                <p>Платформа уже доступна в Европе и адаптирована под локальные рынки.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Практики, применимые <span>сегодня</span></h2>
+            <a href="#" class="btn btn--outline">Все статьи</a>
+        </div>
+        <div class="blog__list">
+            <article class="blog-item">
+                <span class="blog-item__date">23.12.2025</span>
+                <h3>Как AI помогает оценивать перспективы проекта за секунды</h3>
+                <p>Разбор кейсов применения инструментов анализа в реальном секторе...</p>
+                <a href="#contact" class="blog-item__link">Читать далее</a>
+            </article>
+            <article class="blog-item">
+                <span class="blog-item__date">20.12.2025</span>
+                <h3>Стратегия роста на базе инноваций: пошаговый путь</h3>
+                <p>От идеи до первой прибыли с использованием облачных технологий Orbix...</p>
+                <a href="#contact" class="blog-item__link">Читать далее</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <h2 class="section-title">Запросить <span>доступ</span></h2>
+            <p>Получите бесплатную консультацию по всем вопросам и начните свой путь в мире AI.</p>
+        </div>
+        <form class="contact__form" id="main-form">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" id="phone-input" placeholder="Телефон (только цифры)" required>
+            </div>
+
+            <div class="captcha-box">
+                <label id="captcha-label">Сколько будет 5 + 3?</label>
+                <input type="number" id="captcha-input" placeholder="Ответ" required>
+            </div>
+
+            <label class="checkbox-label">
+                <input type="checkbox" required>
+                <span>Я согласен с <a href="./personal-data-policy.html">политикой конфиденциальности</a></span>
+            </label>
+
+            <button type="submit" class="btn btn--accent btn--full">Отправить запрос</button>
+            <div class="form-message" id="form-success">Сообщение успешно отправлено!</div>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
+  <div class="container footer__grid">
+    <div class="footer__col">
+      <a href="./#home" class="logo logo--footer">Orbix-Meter</a>
+      <p class="footer__description">
+        Переосмыслите подход к развитию с помощью AI-инструментов нового поколения. Решения, которые меняют правила
+        игры.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__links">
+        <li><a href="./#home">Главная</a></li>
+        <li><a href="./#about">О платформе</a></li>
+        <li><a href="./#benefits">Преимущества</a></li>
+        <li><a href="./#innovations">Инновации</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+        <li><a href="./cookies.html">Cookie Policy</a></li>
+        <li><a href="./terms.html">Terms of Service</a></li>
+        <li><a href="./return.html">Return Policy</a></li>
+        <li><a href="./disclaimer.html">Disclaimer</a></li>
+        <li><a href="./personal-data-policy.html">Personal Data</a></li>
+      </ul>
+    </div>
+
+<div class="footer__col">
+  <h4 class="footer__title">Контакты</h4>
+  <ul class="footer__contact-list">
+    <li>
+      <a href="tel:+390245071234" class="footer__contact">
+        <i data-lucide="phone"></i> +39 02 4507 1234
       </a>
-    </p>
+    </li>
+    <li>
+      <a href="mailto:support@orbix-meter.blog" class="footer__contact">
+        <i data-lucide="mail"></i> support@orbix-meter.blog
+      </a>
+    </li>
+    <li>
+      <div class="footer__contact">
+        <i data-lucide="map-pin"></i>
+        Via Dante, 15, 20121 Milano MI, Italy
+      </div>
+    </li>
+  </ul>
+</div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>&copy; 2025 Orbix-Meter. Платформа уже доступна в Европе.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button class="btn btn--accent btn--sm" id="cookie-accept">Принять</button>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
