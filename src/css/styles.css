@@ -72,7 +72,7 @@ h4 {
 }
 
 .section-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: clamp(2.2rem, 6vw, 4.5rem);
     margin-bottom: 50px;
     letter-spacing: -0.04em;
 }
@@ -214,7 +214,7 @@ h4 {
 
 .mobile-menu__link {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 20px 0;
     display: block;
@@ -229,7 +229,7 @@ h4 {
 }
 
 .hero__title {
-    font-size: clamp(3.5rem, 10vw, 8rem);
+    font-size: clamp(2.0rem, 10vw, 8rem);
     margin-bottom: 30px;
     max-width: 1000px;
 }
@@ -465,7 +465,7 @@ section {
 }
 
 .pages h1 {
-    font-size: 3.5rem;
+    font-size: 1.6rem;
     margin-bottom: 40px;
     color: var(--color-accent);
 }
@@ -562,7 +562,7 @@ section {
     }
 
     .section-title {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .cookie-popup {
@@ -589,4 +589,29 @@ h4 {
 .word {
     white-space: nowrap;
     display: inline-block;
+}
+@media (max-width: 1024px) {
+
+    /* Прячем кнопку "Связаться" в хедере на мобилках */
+    .header__actions .btn {
+        display: none;
+    }
+
+    /* Остальные стили для мобилок (уже были ранее) */
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .anti-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 }
